@@ -18,15 +18,15 @@
     var self = this;
     self.projectPath = ko.observable("/shared/Sales/Sales Workbook");
     self.filters = ko.observableArray([{
-        "sColFormula": "XSA('federico.venturin@rittmanmead.com'.'Sales').\"Sales\".\"Segment\"",
-        "sColName": "Segment",
+        "sColFormula": "XSA('federico.venturin@rittmanmead.com'.'Sales').\"Sales\".\"Country\"",
+        "sColName": "Country",
         "sOperator": "in",
         "isNumericCol": false,
         "bIsDoubleColumn": false,
         "aCodeValues": [],
-        "aDisplayValues": ['Corporate']
-
-    }])
+        "aDisplayValues": ['Italy']
+    }
+    ])
 
     ko.applyBindings(); 
     }); 
