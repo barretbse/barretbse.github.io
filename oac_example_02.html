@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr">
+<head><script src="https://hbsworkshop-lrxvndpuefpq-ld.analytics.ocp.oraclecloud.com/public/dv/v1/embedding/<embeddingMode>/embedding.js" type="application/javascript">
+</script>
+</head>
+
 <body>
-<h1>Embedding a Workbook with an iFrame</h1>
-<iframe src="https://hbsworkshop-lrxvndpuefpq-ld.analytics.ocp.oraclecloud.com/ui/dv/ui/project.jsp?pageid=visualAnalyzer&reportmode=full&reportpath=%2F%40Catalog%2Fshared%2FSales%2FSales+Workbook" style="height:720px;width:1280px"></iframe>
+<h1>Embedding Analytics Content using JavaScript</h1>
+
+<div style="width:1280px; heigth:720px;" >
+<oracle-dv project-path="/@Catalog/shared/Sales/Sales Workbook">
+</oracle-dv>
+</div>
+
+<script> 
+    requirejs(['knockout', 'ojs/ojcore', 'ojs/ojknockout', 'ojs/ojcomposite', 'jet-composites/oracle-dv/loader'],function(ko) { 
+    ko.applyBindings(); 
+    }); 
+</script>
 </body>
 </html>
